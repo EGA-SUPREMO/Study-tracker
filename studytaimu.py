@@ -185,7 +185,7 @@ def print_session_durations1():
         print('No study sessions found.')
         return
 
-    print('{:<12} {:<12} {:<12} {:<12} {:<12}'.format('Date', 'Start Time', 'End Time', 'Total Duration', 'Duration'))
+    print('{:<12} {:<12} {:<12} {:<12} {:<12}'.format('Date', 'Start Time', 'End Time', 'Total Duration', 'Real Duration'))
     print('-' * 65)
 
     for session in sessions:
@@ -205,13 +205,13 @@ def print_session_durations1():
 
             total_duration = session_duration - total_break_duration
 
-
+        
 
         print('{:<12} {:<12} {:<12} {:<12} {:<12}'.format(start_time.strftime('%m/%d'),
                                                          start_time.strftime('%H:%M'),
                                                          end_time.strftime('%H:%M'),
-                                                         format_timedelta(session_duration),
-                                                         format_timedelta(total_duration)))
+                                                         str(session_duration),
+                                                         str(total_duration)))
 
 
 if __name__ == "__main__":
