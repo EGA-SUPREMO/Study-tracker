@@ -2,4 +2,4 @@
 If Google can know how much I study, so I
 
 ## Usage
-Just execute the only python file, unless someone else has interest in using this piece of shite, i wont bother to explain what each function does
+Just use (ti)[https://github.com/richmeta/ti], it's far better than what I could hope to accomplish, I use an (specific printer)[https://github.com/EGA-SUPREMO/Study-tracker/blob/main/printercompn.py] because `ti log` is shit
